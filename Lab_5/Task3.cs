@@ -147,7 +147,7 @@ namespace Lab_5
 
         public void Show()
         {
-            Console.WriteLine($"\nResult:\nCity: {name}");
+            Console.WriteLine($"\nCity: {name}");
             Console.WriteLine($"Country: {country}");
             Console.WriteLine($"Population: {humanity}");
             Console.WriteLine($"Phone code: {phonecode}");

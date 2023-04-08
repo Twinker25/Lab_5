@@ -149,7 +149,54 @@ namespace Lab_5
                         }
                         break;
                 case 4:
+                        Card card1 = new Card();
+                        Card card2 = new Card();
+                        card1.Input();
+                        Console.WriteLine();
+                        card2.Input();
+                        Console.WriteLine("\nShow info:");
+                        card1.Show();
+                        Console.WriteLine();
+                        card2.Show();
+                        Console.WriteLine();
+                        card1 += 100;
+                        card2 += 100;
+                        Console.Write("\nMoney on card 1: ");
+                        card1.ShowMoney();
+                        Console.Write("\nMoney on card 2: ");
+                        card2.ShowMoney();
+                        card1 -= 50;
+                        card2 -= 100;
+                        Console.Write("\nMoney on card 1: ");
+                        card1.ShowMoney();
+                        Console.Write("\nMoney on card 2: ");
+                        card2.ShowMoney();
+                        Console.WriteLine();
 
+                        if (card1 == card2)
+                        {
+                            Console.WriteLine("\nCard have equal CVC.");
+                        }
+
+                        if (card1 > card2)
+                        {
+                            Console.WriteLine("\nCard 1 has most money than Card 2.");
+                        }
+
+                        else if (card1 < card2)
+                        {
+                            Console.WriteLine("\nCard 2 has most money than Card 1.");
+                        }
+
+                        if (card1 != card2)
+                        {
+                            Console.WriteLine("\nCards have different CVC.");
+                        }
+
+                        if (card1.Equals(card2))
+                        {
+                            Console.WriteLine("\nCards are the equals.");
+                        }
                         break;
                 default:
                         Console.WriteLine("Error! Try again!");

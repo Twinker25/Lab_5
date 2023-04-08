@@ -168,7 +168,7 @@ namespace Lab_5
 
         public void Show()
         {
-            Console.WriteLine($"\nResult:\nPIB: {PIB}");
+            Console.WriteLine($"\nPIB: {PIB}");
             Console.WriteLine($"Date of birth: {birth}");
             Console.WriteLine($"Telephone number: {telephone}");
             Console.WriteLine($"Email: {email}");
